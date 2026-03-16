@@ -1,7 +1,7 @@
 body{
-font-family: Arial, sans-serif
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 margin:0;
-background:#f4f4f4;
+background-color:#f4f4f4;
 }
 
 .navbar{
@@ -13,9 +13,10 @@ padding:15px;
 }
 
 nav a{
-color:white;
-margin-left:15px
+color:black;
+margin-left:15px;
 text-decoration:none;
+background-color: #ff9800;
 }
 
 .hero{
@@ -23,6 +24,14 @@ text-align:center;
 padding:80px;
 background:linear-gradient(135deg,#2193b0,#6dd5ed);
 color:white;
+}
+@media (min-width: 600px) {
+    .hero{
+        height: 500px;
+    }
+    .propuesta{
+         height: 500px;
+    }
 }
 
 button{
@@ -33,7 +42,7 @@ color:white;
 cursor:pointer;
 }
 
-button hover{
+button:hover{
 background:#e68900;
 }
 
