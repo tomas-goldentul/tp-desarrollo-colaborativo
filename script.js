@@ -16,14 +16,13 @@ textoVotos.innerText = "Votos: " + votos
 const form = document.getElementById("formPropuesta")
 
 form.addEventListener("submit", function(e){
-
-let nombre = document.getElementById("nombre").value
-let idea = document.getElementById("idea").value
-
-if(nombre === "" || idea === ""){
-
-document.getElementById("mensaje").innerText = "Completa todos los campos"
-
-}
-
+    e.preventDefault();
+    let nombre = document.getElementById("nombre").value
+    let idea = document.getElementById("idea").value
+    if(nombre === "" || idea === ""){
+        document.getElementById("mensaje").innerText = "Completa todos los campos"
+    }
+    else{
+        document.getElementById("mensaje").innerText = "La propuesta se envió correctamente"
+    }
 })
